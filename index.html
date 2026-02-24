@@ -4,22 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centered Name</title>
+
     <style>
         body {
+            background-color: #ffffff;
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
         }
+
         h1 {
-            font-size: 3rem;
-            color: #333;
+            font-size: 2.8rem;
+            margin: 0 0 20px 0;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Gallery layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #000;
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 1rem;
         }
     </style>
 </head>
+
 <body>
-    <h1>My name is: Insert name here</h1>
+    <div class="container">
+        <h1>My name is: Richard Amadi</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="pictures/lab2 screenshot.png" alt="picture folder">
+                <p>In this lab I created a folder named ArchOSC Assignment and saved it in my workspace folder that I created in the last lab session I also created a  new folder inside the ArchOSC Assignment folder called pictures. </p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pictures/lab 2 screenshot2.png" alt="git init">
+                <p>I created a new folder in the workspace folder and called it GitHub and CICD I opened the folder in terminal and used the git init command to initiate the folder.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pictures/lab2 screenshot3.png" alt="GitHub Repository">
+                <p>I also created a repository on GitHub and made it private. </p>
+            </div>
+            <div class="gallery-item">
+                <img src="pictures/lab2 screenshot4.png" alt="origin link">
+                <p>I used the  command git remote add origin with the link to my GitHub repository to link my local repository to my github repository.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="pictures/lab2 screenshot 5.png" alt="website">
+                <p>
+                    screenshot I opened visual studio code and typed in the HTML code given to us after creating a new text file and saved it in my ArchOSC Assignment folder and named it index .html  
+                </p>
+            </div>
+            <div class="gallery-item">
+                <img src="pictures/lab2 screenshot 6.png" alt="">
+                <p>
+                    I checked list of files that git picks up within the repository that has been created using git status then I added all untracked files and folders to the repository using git add . and checked it again making sure it is showing green not red I used git commit –m “A message about the commit here” to tell git that we are committing the files it currently has on the stage. 
+                </p>
+            </div>
+            <div class="gallery-item">
+                <img src="pictures/lab2 screenshot 7.png" alt="">
+                <p>
+                    I used ‘git branch -m master main to ensure that the name of our “main” branch follows the naming conventions used by GitHub. Then I pushed my repository to GitHub using the ‘Git push –u origin main’ command.
+                </p>
+            </div>
+            <div class="gallery-item">
+                <img src="pictures/lab2 screenshot 9.png" alt="">
+                <p>
+                   This is my index.html file with the new changes I made to it I used the code given and added some css like the hover scale effect and the modern button into the code I kept the html structure the same and added my name to the code.
+                </p>
+            </div>
+            <div class="gallery-item">
+                <img src="pictures/lab2 screenshot 8.png" alt="website">
+                <p>
+                    this is what the code looks like when you run it
+                </p>
+
+            </div>
+
+        </div>
+    </div>
 </body>
+</html>
