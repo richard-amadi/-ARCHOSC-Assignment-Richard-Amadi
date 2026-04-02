@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Amadi – Lab 2 Report</title>
+
+    <style>
+        body {
+            background-color: #eef2f7;
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #d0d7e2;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #003366;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #4a4a4a;
+        }
+
+        /* Gallery layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .gallery-item {
+            background: #f8fbff;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #c9d6e8;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 16px rgba(0, 51, 102, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #003366;
+        }
+
+        .gallery-item p {
+            margin-top: 12px;
+            font-size: 0.95rem;
+            line-height: 1.4rem;
+            color: #333;
+        }
+
+        /* Bottom hyperlink button */
+        .link-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #003366;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .link-button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>lab 3</h1>
+        <p class="subtitle">Introduction-To-YAML</p>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="pictures/lab 3 screenshot 1.png" alt="picture folder">
+                <p>In this lab I created two folders in my workspace folder called new assignment and original assignment I used the skills I learnt from last week lab, using the command line add to my repository from last week as an origin and pull the repository down. </p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pictures/lab 3 screenshot 2.png" alt="git init">
+                <p>I also did the same this time for my GitHub classroom created repository </p>
+           </div>
+
+            <div class="gallery-item">
+                <img src="pictures/lab 3 screenshot 3.png" alt="GitHub Repository">
+                <p>I copied everything from my original assignment folder to my new assignment folder. </p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pictures/lab 3 screenshot 4.png" alt="origin link">
+                <p>I went to the pages section in  settings and unpublished my site I went ahead to set up a git hub action pipeline by returning to the main page and selecting the action button at the nav bar it redirected me to the action window and I selected the New Workflow button at the top left hand side of the screen to be able to write my pipeline I selected the “ set up a work flow yourself” link I changed the mame of my work flow from main .yml to deployment.yml </p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pictures/lab 3 screenshot 5.png" alt="website">
+                <p>i wrote some yaml codes first  I named the workflow and set it to run whenever code is pushed to the main branch. I added the required permissions so the workflow can read the repository and publish to GitHub Pages. Next, I defined a job that runs on an Ubuntu virtual machine. Inside this job, I added steps: checking out the repository, uploading the project as an artifact, and finally deploying that artifact using the GitHub Pages deployment action. This creates a full CI/CD pipeline that automatically publishes the site whenever updates are pushed.</p>
+            </div>
+        </div>
+        
+        <h2>How I Linked My Pages Together</h2>
+        <p>
+            I linked this page to my main website page using a relative HTML hyperlink. 
+            A relative link allows one page in the same GitHub repository to open another page 
+            without needing a full file path. I used the <code>&lt;a&gt;</code> tag with 
+            <code>href="index.html"</code>, which tells the browser to load the homepage from 
+            the same folder. This method works on GitHub Pages because both files are stored 
+            together in the repository. I also added a button-style link at the bottom of the 
+            page so users can easily return to the previous page.
+        </p>
+
+        <!-- Bottom hyperlink button -->
+       <nav>
+            <p style="text-align:center; margin-top:40px;">
+                <a href="index.html" class="link-button">previous page</a>
+            </p>
+        </nav>
+    </div>
+</body>
+</html>

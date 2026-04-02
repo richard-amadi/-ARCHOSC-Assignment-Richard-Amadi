@@ -69,6 +69,23 @@
             line-height: 1.4rem;
             color: #333;
         }
+
+        /* Styled hyperlink button */
+        .link-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #000;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        .link-button:hover {
+            background-color: #444;
+            transform: translateY(-3px);
+        }
     </style>
 </head>
 
@@ -130,6 +147,25 @@
             </div>
 
         </div>
+         <h2>How I Linked My Pages Together</h2>
+        <p>
+            I linked this page to my main website page using a relative HTML hyperlink. 
+            A relative link allows one page in the same GitHub repository to open another page 
+            without needing a full file path. I used the <code>&lt;a&gt;</code> tag with 
+            <code>href="index.html"</code>, which tells the browser to load the homepage from 
+            the same folder. This method works on GitHub Pages because both files are stored 
+            together in the repository. I also added a button-style link at the bottom of the 
+            page so users can easily return to the previous page.
+        </p>
+
+        <!-- Bottom hyperlink button -->
+        <nav>
+            <p style="text-align:center; margin-top:40px;">
+                <a href="index 2.html" class="link-button">next page</a>
+            </p>
+
+        </nav>
+       
     </div>
 </body>
 </html>
